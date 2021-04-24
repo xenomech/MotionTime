@@ -1,13 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap");
 html,
 body {
   background-color: #000;
   width: 100%;
-  height: 100%;
   margin: 0;
-  overflow: hidden;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav {
+  padding: 0rem 10rem;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+.banner {
+  font-family: "Pacifico", cursive;
+  padding: 3rem 10rem;
+  font-size: 2rem;
+}
+#logo,
+#software-devel {
+  width: 50%;
 }
 
-#bm {
-  width: 100%;
-  height: 100%;
+@media only screen and (max-width: 768px) {
+  .nav {
+    padding: 0rem 5rem;
+  }
+  .banner {
+    padding: 3rem 5rem;
+  }
+  #logo,
+  #software-devel {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .nav {
+    padding: 0rem 2rem;
+  }
+  .banner {
+    padding: 3rem 2rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  #logo,
+  #software-devel {
+    width: 100%;
+    height: 100%;
+  }
 }
