@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>After Effects Bodymovin lotte svg animations</title>
+  </head>
+  <body>
+    <div id="bm"></div>
+    <!-- bodymovin cdn player -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- parameters -->
+    <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("bm"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        prerender: true,
+        path: "data.json",
+      });
+    </script>
+  </body>
+</html>
