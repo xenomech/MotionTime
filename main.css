@@ -7,10 +7,9 @@ body {
   color: white;
 }
 .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
 }
 .nav {
   padding: 0rem 10rem;
@@ -19,17 +18,22 @@ body {
 }
 .banner {
   font-family: "Pacifico", cursive;
-  padding: 3rem 10rem;
+  padding: 3rem 0rem;
+  padding-left: 10rem;
+  /* margin: 0rem 3rem; */
   font-size: 2rem;
 }
 #logo,
 #software-devel {
-  width: 50%;
+  width: 75%;
 }
 
 @media only screen and (max-width: 768px) {
   .nav {
     padding: 0rem 5rem;
+  }
+  .container {
+    grid-template-columns: auto;
   }
   .banner {
     padding: 3rem 5rem;
